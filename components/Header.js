@@ -8,9 +8,9 @@ function Header() {
     const { user } = useMoralis();
 
     return (
-        <div className='sticky top-0 p-5 z-50 bg-black shadow-sm border-b-2 border-blue-200 text-blue-200'>
-            <div className='grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center'>
-                <div className='relative h-24 w-24 mx-auto hidden lg:inline-grid'>
+        <div className='sticky top-0 p-5 z-50 bg-gradient-to-r from-blue-200 via-blue-200 to-blue-200 shadow-sm border-b-2 border-blue-200 text-blue-200'>
+            <div className=' grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center'>
+                <div className='relative h-28 w-28 mx-auto hidden lg:inline-grid '>
                     <Image 
                         layout = "fill"
                         objectFit='cover'
@@ -20,15 +20,15 @@ function Header() {
                 </div>
                 
                 <div className='col-span-4 text-left lg:text-center'>
-                    <div className='relative h-48 w-48 lg:mx-auto border-blue-200 border-8 rounded-full'>
+                    <div className='relative h-48 w-48 lg:mx-auto border-white border-8 rounded-full'>
                         <Avatar logoutOnPress/>
                     </div>
                     
-                    <h1 className='text-3xl'>
-                    Welcome to MetaChat
+                    <h1 className='text-3xl text-gray-900 p-3 font-mono font-bold'>
+                    WELCOME TO THE METACHAT!
                     </h1>
                     
-                    <h2 className='text-5xl font-bold truncate'>
+                    <h2 className='text-5xl font-bold truncate text-gray-900 font-mono'>
                     {user.getUsername()}
                     </h2>
                     

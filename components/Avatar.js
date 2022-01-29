@@ -7,7 +7,7 @@ function Avatar({ username, logoutOnPress}) {
 
     return (
     <Image 
-        className='rounded-full bg-black cursor-pointer hover:opacity-75'
+        className='rounded-full bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 cursor-pointer hover:opacity-75'
         src = {`https://avatars.dicebear.com/api/pixel-art/${username || user.get("username")}.svg`}
         onClick={() => logoutOnPress && logout()}
         layout='fill'

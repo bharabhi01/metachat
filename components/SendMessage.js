@@ -31,7 +31,7 @@ function SendMessage({ endOfMessageRef }) {
     };
 
     return (
-    <form className='flex fixed bottom-10 bg-gray-200 opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-200'>
+    <form className='flex fixed bottom-10 bg-gray-100 opacity-90 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-white'>
         <input 
             className='flex-grow outline-none bg-transparent text-black placeholder-gray-500 pr-5'
             type="text" 
@@ -42,7 +42,7 @@ function SendMessage({ endOfMessageRef }) {
         <button 
             type = 'submit'
             onClick={sendMessage}
-            className='font-bold text-blue-500'
+            className='font-bold text-gray-800'
         >
             Send
         </button>

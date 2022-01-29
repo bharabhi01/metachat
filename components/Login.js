@@ -16,10 +16,10 @@ function Login() {
                     width={250}
                 />
 
-                <h1 className='text-6xl font-bold font-mono pb-20 pt-16'>ENTER THE FUTURE OF MESSAGING!</h1>
+                <h1 className='text-6xl font-bold font-mono pb-20 pt-16 animate-bounce'>ENTER THE FUTURE OF MESSAGING!</h1>
 
-                <button onClick={authenticate} className='bg-purple-500 rounded-lg p-5 font-bold hover:animate-bounce animate-pulse'>
-                    LOGIN TO THE METACHAT
+                <button onClick={authenticate} className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-5 font-bold hover:animate-pulse'>
+                    LOGIN 
                 </button>
             </div>
 
