@@ -6,26 +6,24 @@ function Login() {
     const { authenticate, isAuthenticating } = useMoralis();
 
     return (
-        <div className='bg-black relative text-white'>
+        <div className='bg-black text-white'>
             
-            <h1>I am the login screen</h1>
-            
-            <div className='flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-5'>
+            <div className='flex flex-col absolute z-50 h-5/6 w-full items-center justify-center space-y-5'>
                 <Image
                 className='object-cover rounded-full'
                     src ="https://i.imgur.com/WCzuaEb.png"
-                    height={200}
-                    width={200}
+                    height={250}
+                    width={250}
                 />
 
-                <h1 className='font-sans text-7xl pb-8 pt-8'>Welcome to the future of Messaging</h1>
+                <h1 className='text-6xl font-bold font-mono pb-20 pt-16'>ENTER THE FUTURE OF MESSAGING!</h1>
 
-                <button onClick={authenticate} className='bg-purple-500 rounded-lg p-5 font-bold animate-pulse'>
-                    Login to the MetaChat
+                <button onClick={authenticate} className='bg-purple-500 rounded-lg p-5 font-bold hover:animate-bounce animate-pulse'>
+                    LOGIN TO THE METACHAT
                 </button>
             </div>
 
-            <div className='w-full h-screen'>
+            <div className='w-full h-screen blur'>
                 <Image
                     src = "https://i.pinimg.com/736x/95/0a/ec/950aecd45f489c1b1642b2e9c9adec1a.jpg"
                     layout='fill'
