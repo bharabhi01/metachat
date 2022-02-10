@@ -21,6 +21,9 @@ function Login() {
                 <button onClick={authenticate} className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-5 font-bold hover:animate-pulse'>
                     LOGIN 
                 </button>
+
+                <h2 className='font-mono'>DON'T HAVE AN ACCOUNT?</h2> <a href='https://metamask.io/'  target = '_blank' className='underline font-mono'>SIGN UP HERE!</a>
+                
             </div>
 
             <div className='w-full h-screen blur'>
