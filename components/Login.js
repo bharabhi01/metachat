@@ -1,41 +1,61 @@
-import React from 'react';
-import Image from 'next/image';
-import { useMoralis } from "react-moralis"
+import React from 'react'
+import Image from 'next/image'
+import { useMoralis } from 'react-moralis'
 
 function Login() {
-    const { authenticate, isAuthenticating } = useMoralis();
+  const { authenticate, isAuthenticating } = useMoralis()
 
-    return (
-        <div className='bg-black text-white'>
-            
-            <div className='flex flex-col absolute z-50 h-5/6 w-full items-center justify-center space-y-5'>
-                <Image
-                className='object-cover rounded-full'
-                    src ="https://i.imgur.com/WCzuaEb.png"
-                    height={250}
-                    width={250}
-                />
-
-                <h1 className='text-6xl font-bold font-mono pb-20 pt-16 animate-bounce'>ENTER THE FUTURE OF MESSAGING!</h1>
-
-                <button onClick={authenticate} className='bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-5 font-bold hover:animate-pulse'>
-                    LOGIN 
-                </button>
-
-                <h2 className='font-mono'>DON'T HAVE AN ACCOUNT?</h2> <a href='https://metamask.io/'  target = '_blank' className='underline font-mono'>SIGN UP HERE!</a>
-                
+  return (
+    <div className="bg-white dark:bg-gray-900">
+      <div className="flex h-screen justify-center">
+        <div
+          className="hidden bg-cover lg:block lg:w-2/3"
+          style={{
+            backgroundImage: `url('https://i.imgur.com/uA1sqby.jpg')`,
+          }}
+        >
+          <div className="flex h-full items-center bg-gray-900 bg-opacity-60 px-20">
+            <div>
+              <h2 className="text-4xl font-bold text-white">Welcome to the Future of Messaging.</h2>
             </div>
-
-            <div className='w-full h-screen blur'>
-                <Image
-                    src = "https://i.pinimg.com/736x/95/0a/ec/950aecd45f489c1b1642b2e9c9adec1a.jpg"
-                    layout='fill'
-                    objectFit='cover'
-                />
-            </div>
-
+          </div>
         </div>
-    );
+
+        <div className="mx-auto flex w-full max-w-md items-center px-6 lg:w-2/6">
+          <div className="flex-1">
+            <div className="text-center">
+              <h2 className="text-center text-4xl font-bold text-gray-700 dark:text-white">
+                MetaChat
+              </h2>
+              
+            </div>
+
+            <div className="mt-8">
+                <div className="mt-6">
+                  <button
+                    onClick={ authenticate }
+                    className="w-full transform rounded-md bg-red-500 px-4 py-2 tracking-wide text-white hover:bg-red-400 focus:bg-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-50"
+                  >
+                    Sign in with Metamask
+                  </button>
+                </div>
+
+              <p className="mt-6 text-center text-sm text-gray-400">
+                Don&#x27;t have an account yet?{' '}
+                <a
+                  href="https://metamask.io/"
+                  target="_blank"
+                  className="text-blue-500 hover:underline focus:underline focus:outline-none"
+                >
+                  Sign up
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Login;
+export default Login
